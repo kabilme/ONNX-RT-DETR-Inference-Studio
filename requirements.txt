@@ -1,0 +1,6 @@
+onnxruntime>=1.19.0
+opencv-python>=4.10.0.84
+numpy>=1.26.0
+pillow>=10.0.0
+rich>=13.0.0
+streamlit>=1.38.0
