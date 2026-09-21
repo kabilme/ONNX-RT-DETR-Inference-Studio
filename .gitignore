@@ -20,3 +20,10 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 .DS_Store
+
+# Model weights
+*.onnx
+*.pt
+*.engine
+*.bin
+
