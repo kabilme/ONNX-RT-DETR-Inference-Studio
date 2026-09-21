@@ -56,17 +56,17 @@ copy path\to\your_model.onnx best.onnx
 
 #### Image Inference
 ```bash
-python infer.py --source sample_test.jpg --model best.onnx --conf 0.40 --save --export-metrics metrics.json
+python infer.py --source path/to/image.jpg --model best.onnx --conf 0.40 --save --export-metrics metrics.json
 ```
 
 #### Video Inference
 ```bash
-python infer.py --source sample_test.mp4 --model best.onnx --conf 0.40 --save
+python infer.py --source path/to/video.mp4 --model best.onnx --conf 0.40 --save
 ```
 
 #### Live Display with Interactive Keys
 ```bash
-python infer.py --source sample_test.mp4 --show
+python infer.py --source path/to/video.mp4 --show
 ```
 *Keyboard shortcuts during live display:*
 - `Q` or `ESC`: Exit
@@ -128,10 +128,6 @@ ONNX-RT-DETR-Inference-Studio/
 ├── model_engine.py         # ONNX Runtime detector with pre/post-processing & metrics
 ├── visualizer.py           # Bounding box renderer and translucent HUD metrics card
 ├── requirements.txt        # Python dependencies
-├── sample_test.jpg         # Sample test image
-├── sample_test.mp4         # Sample test video
-├── sample_img_metrics.json # Sample image benchmark output
-├── sample_video_metrics.json# Sample video benchmark output
 ├── .gitignore              # Git ignore rules (weights, cache, runs)
 └── README.md               # Documentation
 ```
